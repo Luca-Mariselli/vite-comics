@@ -1,6 +1,11 @@
 <script>
+import SingleComic from './SingleComic.vue'
 
 export default {
+    components: {
+        SingleComic,
+
+    },
 
     data() {
         return {
@@ -91,10 +96,7 @@ export default {
         <div class="boxed position-relative">
             <h2><span class="badge text-bg-secondary my-absolute">CURRENT SERIES</span></h2>
             <div class="d-flex flex-wrap mt-5">
-                <div v-for="card in fumetti" class="col-2 mb-5">
-                    <div class="my-cards" :style="{ backgroundImage: 'url(' + card.thumb + ')' }"></div>
-                    <div class="mt-4 font-medio">{{ card.series.toUpperCase() }}</div>
-                </div>
+                <SingleComic v-for="card in fumetti" :fumetto="card"></SingleComic>
             </div>
             <span class="badge text-bg-secondary my-load">LOAD MORE</span>
         </div>
