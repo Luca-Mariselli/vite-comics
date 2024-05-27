@@ -16,5 +16,10 @@ body {
 }
 
 .my-img-w {
-  width: 25%;
+  max-width: 25%;
+  max-height: 60px;
+}
+
+.font-medio {
+  font-size: 13px;
 }

@@ -160,13 +160,13 @@ export default {
         <div class="d-flex boxed align-items-center justify-content-around text-center h-100">
             <div v-for="elemento in menuFootBar" class="me-3 ms-3 col-2">
                 <img :src="elemento.img" alt="" class="me-2 ms-2 my-img-w">
-                {{ elemento.txt }}
+                {{ elemento.txt.toUpperCase() }}
             </div>
         </div>
 
         <div class="my-foot-jumbo">
             <div class="boxed d-flex">
-                <div class="my-col-w d-flex align-items-left flex-column flex-wrap">
+                <div class="my-col-w d-flex justify-content-start flex-column flex-wrap">
                     <div class="col-3 p-5">
                         <div v-for=" elemento in menuFootJumbo1">{{ elemento.txt }}</div>
                     </div>

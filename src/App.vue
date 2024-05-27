@@ -26,7 +26,7 @@ export default {
 
   <AppHeader />
 
-  <main class="boxed">
+  <main>
     <AppMain />
   </main>
 
